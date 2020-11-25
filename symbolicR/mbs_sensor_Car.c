@@ -1,0 +1,814 @@
+//
+//-------------------------------------------------------------
+//
+//	ROBOTRAN - Version 6.6 (build : february 22, 2008)
+//
+//	Copyright 
+//	Universite catholique de Louvain 
+//	Departement de Mecanique 
+//	Unite de Production Mecanique et Machines 
+//	2, Place du Levant 
+//	1348 Louvain-la-Neuve 
+//	http://www.robotran.be// 
+//
+//	==> Generation Date : Wed Nov 25 15:45:59 2020
+//
+//	==> Project name : Car
+//	==> using XML input file 
+//
+//	==> Number of joints : 44
+//
+//	==> Function : F 6 : Sensors Kinematical Informations (sens) 
+//	==> Flops complexity : 1705
+//
+//	==> Generation Time :  0.030 seconds
+//	==> Post-Processing :  0.030 seconds
+//
+//-------------------------------------------------------------
+//
+ 
+#include <math.h> 
+
+#include "mbs_data.h"
+#include "mbs_project_interface.h"
+#include "mbs_sensor.h"
+ 
+void  mbs_sensor(MbsSensor *sens, 
+              MbsData *s,
+              int isens)
+{ 
+ 
+#include "mbs_sensor_Car.h" 
+#define q s->q 
+#define qd s->qd 
+#define qdd s->qdd 
+ 
+ 
+
+// === begin imp_aux === 
+
+// === end imp_aux === 
+
+// ===== BEGIN task 0 ===== 
+ 
+// Sensor Kinematics 
+
+
+
+// = = Block_0_0_0_0_0_1 = = 
+ 
+// Trigonometric Variables  
+
+  C4 = cos(q[4]);
+  S4 = sin(q[4]);
+  C5 = cos(q[5]);
+  S5 = sin(q[5]);
+  C6 = cos(q[6]);
+  S6 = sin(q[6]);
+
+// = = Block_0_0_0_0_0_3 = = 
+ 
+// Trigonometric Variables  
+
+  C8 = cos(q[8]);
+  S8 = sin(q[8]);
+  C9 = cos(q[9]);
+  S9 = sin(q[9]);
+  C10 = cos(q[10]);
+  S10 = sin(q[10]);
+  C11 = cos(q[11]);
+  S11 = sin(q[11]);
+  C12 = cos(q[12]);
+  S12 = sin(q[12]);
+
+// = = Block_0_0_0_0_0_4 = = 
+ 
+// Trigonometric Variables  
+
+  C13 = cos(q[13]);
+  S13 = sin(q[13]);
+  C14 = cos(q[14]);
+  S14 = sin(q[14]);
+  C15 = cos(q[15]);
+  S15 = sin(q[15]);
+  C16 = cos(q[16]);
+  S16 = sin(q[16]);
+  C17 = cos(q[17]);
+  S17 = sin(q[17]);
+
+// = = Block_0_0_0_0_0_15 = = 
+ 
+// Trigonometric Variables  
+
+  C33 = cos(q[33]);
+  S33 = sin(q[33]);
+  C34 = cos(q[34]);
+  S34 = sin(q[34]);
+  C35 = cos(q[35]);
+  S35 = sin(q[35]);
+
+// = = Block_0_0_0_0_0_16 = = 
+ 
+// Trigonometric Variables  
+
+  C36 = cos(q[36]);
+  S36 = sin(q[36]);
+  C37 = cos(q[37]);
+  S37 = sin(q[37]);
+  C38 = cos(q[38]);
+  S38 = sin(q[38]);
+
+// ====== END Task 0 ====== 
+
+// ===== BEGIN task 1 ===== 
+ 
+switch(isens)
+{
+ 
+// 
+break;
+case 1:
+ 
+
+
+// = = Block_1_0_0_1_0_1 = = 
+ 
+// Sensor Kinematics 
+
+
+    ROcp0_45 = -S4*C5;
+    ROcp0_55 = C4*C5;
+    ROcp0_75 = S4*S5;
+    ROcp0_85 = -C4*S5;
+    ROcp0_16 = -(ROcp0_75*S6-C4*C6);
+    ROcp0_26 = -(ROcp0_85*S6-S4*C6);
+    ROcp0_36 = -C5*S6;
+    ROcp0_76 = ROcp0_75*C6+C4*S6;
+    ROcp0_86 = ROcp0_85*C6+S4*S6;
+    ROcp0_96 = C5*C6;
+    OMcp0_15 = qd[5]*C4;
+    OMcp0_25 = qd[5]*S4;
+    OMcp0_16 = OMcp0_15+ROcp0_45*qd[6];
+    OMcp0_26 = OMcp0_25+ROcp0_55*qd[6];
+    OMcp0_36 = qd[4]+qd[6]*S5;
+    OPcp0_16 = ROcp0_45*qdd[6]+qdd[5]*C4-qd[4]*qd[5]*S4+qd[6]*(OMcp0_25*S5-ROcp0_55*qd[4]);
+    OPcp0_26 = ROcp0_55*qdd[6]+qdd[5]*S4+qd[4]*qd[5]*C4-qd[6]*(OMcp0_15*S5-ROcp0_45*qd[4]);
+    OPcp0_36 = qdd[4]+qdd[6]*S5+qd[5]*qd[6]*C5;
+    RLcp0_173 = ROcp0_16*s->dpt[1][16]+ROcp0_76*s->dpt[3][16];
+    RLcp0_273 = ROcp0_26*s->dpt[1][16]+ROcp0_86*s->dpt[3][16];
+    RLcp0_373 = ROcp0_36*s->dpt[1][16]+ROcp0_96*s->dpt[3][16];
+    POcp0_173 = RLcp0_173+q[1];
+    POcp0_273 = RLcp0_273+q[2];
+    POcp0_373 = RLcp0_373+q[3];
+    JTcp0_173_5 = RLcp0_373*S4;
+    JTcp0_273_5 = -RLcp0_373*C4;
+    JTcp0_373_5 = -(RLcp0_173*S4-RLcp0_273*C4);
+    JTcp0_173_6 = -(RLcp0_273*S5-RLcp0_373*ROcp0_55);
+    JTcp0_273_6 = RLcp0_173*S5-RLcp0_373*ROcp0_45;
+    JTcp0_373_6 = -(RLcp0_173*ROcp0_55-RLcp0_273*ROcp0_45);
+    ORcp0_173 = OMcp0_26*RLcp0_373-OMcp0_36*RLcp0_273;
+    ORcp0_273 = -(OMcp0_16*RLcp0_373-OMcp0_36*RLcp0_173);
+    ORcp0_373 = OMcp0_16*RLcp0_273-OMcp0_26*RLcp0_173;
+    VIcp0_173 = ORcp0_173+qd[1];
+    VIcp0_273 = ORcp0_273+qd[2];
+    VIcp0_373 = ORcp0_373+qd[3];
+    ACcp0_173 = qdd[1]+OMcp0_26*ORcp0_373-OMcp0_36*ORcp0_273+OPcp0_26*RLcp0_373-OPcp0_36*RLcp0_273;
+    ACcp0_273 = qdd[2]-OMcp0_16*ORcp0_373+OMcp0_36*ORcp0_173-OPcp0_16*RLcp0_373+OPcp0_36*RLcp0_173;
+    ACcp0_373 = qdd[3]+OMcp0_16*ORcp0_273-OMcp0_26*ORcp0_173+OPcp0_16*RLcp0_273-OPcp0_26*RLcp0_173;
+
+// = = Block_1_0_0_1_1_0 = = 
+ 
+// Symbolic Outputs  
+
+    sens->P[1] = POcp0_173;
+    sens->P[2] = POcp0_273;
+    sens->P[3] = POcp0_373;
+    sens->R[1][1] = ROcp0_16;
+    sens->R[1][2] = ROcp0_26;
+    sens->R[1][3] = ROcp0_36;
+    sens->R[2][1] = ROcp0_45;
+    sens->R[2][2] = ROcp0_55;
+    sens->R[2][3] = S5;
+    sens->R[3][1] = ROcp0_76;
+    sens->R[3][2] = ROcp0_86;
+    sens->R[3][3] = ROcp0_96;
+    sens->V[1] = VIcp0_173;
+    sens->V[2] = VIcp0_273;
+    sens->V[3] = VIcp0_373;
+    sens->OM[1] = OMcp0_16;
+    sens->OM[2] = OMcp0_26;
+    sens->OM[3] = OMcp0_36;
+    sens->J[1][1] = (1.0);
+    sens->J[1][4] = -RLcp0_273;
+    sens->J[1][5] = JTcp0_173_5;
+    sens->J[1][6] = JTcp0_173_6;
+    sens->J[2][2] = (1.0);
+    sens->J[2][4] = RLcp0_173;
+    sens->J[2][5] = JTcp0_273_5;
+    sens->J[2][6] = JTcp0_273_6;
+    sens->J[3][3] = (1.0);
+    sens->J[3][5] = JTcp0_373_5;
+    sens->J[3][6] = JTcp0_373_6;
+    sens->J[4][5] = C4;
+    sens->J[4][6] = ROcp0_45;
+    sens->J[5][5] = S4;
+    sens->J[5][6] = ROcp0_55;
+    sens->J[6][4] = (1.0);
+    sens->J[6][6] = S5;
+    sens->A[1] = ACcp0_173;
+    sens->A[2] = ACcp0_273;
+    sens->A[3] = ACcp0_373;
+    sens->OMP[1] = OPcp0_16;
+    sens->OMP[2] = OPcp0_26;
+    sens->OMP[3] = OPcp0_36;
+ 
+// 
+break;
+case 2:
+ 
+
+
+// = = Block_1_0_0_2_0_1 = = 
+ 
+// Sensor Kinematics 
+
+
+    ROcp1_45 = -S4*C5;
+    ROcp1_55 = C4*C5;
+    ROcp1_75 = S4*S5;
+    ROcp1_85 = -C4*S5;
+    ROcp1_16 = -(ROcp1_75*S6-C4*C6);
+    ROcp1_26 = -(ROcp1_85*S6-S4*C6);
+    ROcp1_36 = -C5*S6;
+    ROcp1_76 = ROcp1_75*C6+C4*S6;
+    ROcp1_86 = ROcp1_85*C6+S4*S6;
+    ROcp1_96 = C5*C6;
+    OMcp1_15 = qd[5]*C4;
+    OMcp1_25 = qd[5]*S4;
+    OMcp1_16 = OMcp1_15+ROcp1_45*qd[6];
+    OMcp1_26 = OMcp1_25+ROcp1_55*qd[6];
+    OMcp1_36 = qd[4]+qd[6]*S5;
+    OPcp1_16 = ROcp1_45*qdd[6]+qdd[5]*C4-qd[4]*qd[5]*S4+qd[6]*(OMcp1_25*S5-ROcp1_55*qd[4]);
+    OPcp1_26 = ROcp1_55*qdd[6]+qdd[5]*S4+qd[4]*qd[5]*C4-qd[6]*(OMcp1_15*S5-ROcp1_45*qd[4]);
+    OPcp1_36 = qdd[4]+qdd[6]*S5+qd[5]*qd[6]*C5;
+
+// = = Block_1_0_0_2_0_3 = = 
+ 
+// Sensor Kinematics 
+
+
+    ROcp1_48 = ROcp1_45*C8+ROcp1_76*S8;
+    ROcp1_58 = ROcp1_55*C8+ROcp1_86*S8;
+    ROcp1_68 = ROcp1_96*S8+S5*C8;
+    ROcp1_78 = -(ROcp1_45*S8-ROcp1_76*C8);
+    ROcp1_88 = -(ROcp1_55*S8-ROcp1_86*C8);
+    ROcp1_98 = ROcp1_96*C8-S5*S8;
+    ROcp1_19 = ROcp1_16*C9-ROcp1_78*S9;
+    ROcp1_29 = ROcp1_26*C9-ROcp1_88*S9;
+    ROcp1_39 = ROcp1_36*C9-ROcp1_98*S9;
+    ROcp1_79 = ROcp1_16*S9+ROcp1_78*C9;
+    ROcp1_89 = ROcp1_26*S9+ROcp1_88*C9;
+    ROcp1_99 = ROcp1_36*S9+ROcp1_98*C9;
+    ROcp1_410 = ROcp1_48*C10+ROcp1_79*S10;
+    ROcp1_510 = ROcp1_58*C10+ROcp1_89*S10;
+    ROcp1_610 = ROcp1_68*C10+ROcp1_99*S10;
+    ROcp1_710 = -(ROcp1_48*S10-ROcp1_79*C10);
+    ROcp1_810 = -(ROcp1_58*S10-ROcp1_89*C10);
+    ROcp1_910 = -(ROcp1_68*S10-ROcp1_99*C10);
+    ROcp1_111 = ROcp1_19*C11+ROcp1_410*S11;
+    ROcp1_211 = ROcp1_29*C11+ROcp1_510*S11;
+    ROcp1_311 = ROcp1_39*C11+ROcp1_610*S11;
+    ROcp1_411 = -(ROcp1_19*S11-ROcp1_410*C11);
+    ROcp1_511 = -(ROcp1_29*S11-ROcp1_510*C11);
+    ROcp1_611 = -(ROcp1_39*S11-ROcp1_610*C11);
+    ROcp1_112 = ROcp1_111*C12-ROcp1_710*S12;
+    ROcp1_212 = ROcp1_211*C12-ROcp1_810*S12;
+    ROcp1_312 = ROcp1_311*C12-ROcp1_910*S12;
+    ROcp1_712 = ROcp1_111*S12+ROcp1_710*C12;
+    ROcp1_812 = ROcp1_211*S12+ROcp1_810*C12;
+    ROcp1_912 = ROcp1_311*S12+ROcp1_910*C12;
+    RLcp1_18 = ROcp1_16*s->dpt[1][1]+ROcp1_45*s->dpt[2][1]+ROcp1_76*s->dpt[3][1];
+    RLcp1_28 = ROcp1_26*s->dpt[1][1]+ROcp1_55*s->dpt[2][1]+ROcp1_86*s->dpt[3][1];
+    RLcp1_38 = ROcp1_36*s->dpt[1][1]+ROcp1_96*s->dpt[3][1]+s->dpt[2][1]*S5;
+    OMcp1_18 = OMcp1_16+ROcp1_16*qd[8];
+    OMcp1_28 = OMcp1_26+ROcp1_26*qd[8];
+    OMcp1_38 = OMcp1_36+ROcp1_36*qd[8];
+    ORcp1_18 = OMcp1_26*RLcp1_38-OMcp1_36*RLcp1_28;
+    ORcp1_28 = -(OMcp1_16*RLcp1_38-OMcp1_36*RLcp1_18);
+    ORcp1_38 = OMcp1_16*RLcp1_28-OMcp1_26*RLcp1_18;
+    OPcp1_18 = OPcp1_16+ROcp1_16*qdd[8]+qd[8]*(OMcp1_26*ROcp1_36-OMcp1_36*ROcp1_26);
+    OPcp1_28 = OPcp1_26+ROcp1_26*qdd[8]-qd[8]*(OMcp1_16*ROcp1_36-OMcp1_36*ROcp1_16);
+    OPcp1_38 = OPcp1_36+ROcp1_36*qdd[8]+qd[8]*(OMcp1_16*ROcp1_26-OMcp1_26*ROcp1_16);
+    RLcp1_19 = ROcp1_48*s->dpt[2][17];
+    RLcp1_29 = ROcp1_58*s->dpt[2][17];
+    RLcp1_39 = ROcp1_68*s->dpt[2][17];
+    OMcp1_19 = OMcp1_18+ROcp1_48*qd[9];
+    OMcp1_29 = OMcp1_28+ROcp1_58*qd[9];
+    OMcp1_39 = OMcp1_38+ROcp1_68*qd[9];
+    ORcp1_19 = OMcp1_28*RLcp1_39-OMcp1_38*RLcp1_29;
+    ORcp1_29 = -(OMcp1_18*RLcp1_39-OMcp1_38*RLcp1_19);
+    ORcp1_39 = OMcp1_18*RLcp1_29-OMcp1_28*RLcp1_19;
+    OMcp1_110 = OMcp1_19+ROcp1_19*qd[10];
+    OMcp1_210 = OMcp1_29+ROcp1_29*qd[10];
+    OMcp1_310 = OMcp1_39+ROcp1_39*qd[10];
+    OMcp1_111 = OMcp1_110+ROcp1_710*qd[11];
+    OMcp1_211 = OMcp1_210+ROcp1_810*qd[11];
+    OMcp1_311 = OMcp1_310+ROcp1_910*qd[11];
+    OPcp1_111 = OPcp1_18+ROcp1_19*qdd[10]+ROcp1_48*qdd[9]+ROcp1_710*qdd[11]+qd[10]*(OMcp1_29*ROcp1_39-OMcp1_39*ROcp1_29)+
+ qd[11]*(OMcp1_210*ROcp1_910-OMcp1_310*ROcp1_810)+qd[9]*(OMcp1_28*ROcp1_68-OMcp1_38*ROcp1_58);
+    OPcp1_211 = OPcp1_28+ROcp1_29*qdd[10]+ROcp1_58*qdd[9]+ROcp1_810*qdd[11]-qd[10]*(OMcp1_19*ROcp1_39-OMcp1_39*ROcp1_19)-
+ qd[11]*(OMcp1_110*ROcp1_910-OMcp1_310*ROcp1_710)-qd[9]*(OMcp1_18*ROcp1_68-OMcp1_38*ROcp1_48);
+    OPcp1_311 = OPcp1_38+ROcp1_39*qdd[10]+ROcp1_68*qdd[9]+ROcp1_910*qdd[11]+qd[10]*(OMcp1_19*ROcp1_29-OMcp1_29*ROcp1_19)+
+ qd[11]*(OMcp1_110*ROcp1_810-OMcp1_210*ROcp1_710)+qd[9]*(OMcp1_18*ROcp1_58-OMcp1_28*ROcp1_48);
+    RLcp1_112 = ROcp1_710*s->dpt[3][21];
+    RLcp1_212 = ROcp1_810*s->dpt[3][21];
+    RLcp1_312 = ROcp1_910*s->dpt[3][21];
+    POcp1_112 = RLcp1_112+RLcp1_18+RLcp1_19+q[1];
+    POcp1_212 = RLcp1_212+RLcp1_28+RLcp1_29+q[2];
+    POcp1_312 = RLcp1_312+RLcp1_38+RLcp1_39+q[3];
+    OMcp1_112 = OMcp1_111+ROcp1_411*qd[12];
+    OMcp1_212 = OMcp1_211+ROcp1_511*qd[12];
+    OMcp1_312 = OMcp1_311+ROcp1_611*qd[12];
+    ORcp1_112 = OMcp1_211*RLcp1_312-OMcp1_311*RLcp1_212;
+    ORcp1_212 = -(OMcp1_111*RLcp1_312-OMcp1_311*RLcp1_112);
+    ORcp1_312 = OMcp1_111*RLcp1_212-OMcp1_211*RLcp1_112;
+    VIcp1_112 = ORcp1_112+ORcp1_18+ORcp1_19+qd[1];
+    VIcp1_212 = ORcp1_212+ORcp1_28+ORcp1_29+qd[2];
+    VIcp1_312 = ORcp1_312+ORcp1_38+ORcp1_39+qd[3];
+    OPcp1_112 = OPcp1_111+ROcp1_411*qdd[12]+qd[12]*(OMcp1_211*ROcp1_611-OMcp1_311*ROcp1_511);
+    OPcp1_212 = OPcp1_211+ROcp1_511*qdd[12]-qd[12]*(OMcp1_111*ROcp1_611-OMcp1_311*ROcp1_411);
+    OPcp1_312 = OPcp1_311+ROcp1_611*qdd[12]+qd[12]*(OMcp1_111*ROcp1_511-OMcp1_211*ROcp1_411);
+    ACcp1_112 = qdd[1]+OMcp1_211*ORcp1_312+OMcp1_26*ORcp1_38+OMcp1_28*ORcp1_39-OMcp1_311*ORcp1_212-OMcp1_36*ORcp1_28-
+ OMcp1_38*ORcp1_29+OPcp1_211*RLcp1_312+OPcp1_26*RLcp1_38+OPcp1_28*RLcp1_39-OPcp1_311*RLcp1_212-OPcp1_36*RLcp1_28-OPcp1_38*
+ RLcp1_29;
+    ACcp1_212 = qdd[2]-OMcp1_111*ORcp1_312-OMcp1_16*ORcp1_38-OMcp1_18*ORcp1_39+OMcp1_311*ORcp1_112+OMcp1_36*ORcp1_18+
+ OMcp1_38*ORcp1_19-OPcp1_111*RLcp1_312-OPcp1_16*RLcp1_38-OPcp1_18*RLcp1_39+OPcp1_311*RLcp1_112+OPcp1_36*RLcp1_18+OPcp1_38*
+ RLcp1_19;
+    ACcp1_312 = qdd[3]+OMcp1_111*ORcp1_212+OMcp1_16*ORcp1_28+OMcp1_18*ORcp1_29-OMcp1_211*ORcp1_112-OMcp1_26*ORcp1_18-
+ OMcp1_28*ORcp1_19+OPcp1_111*RLcp1_212+OPcp1_16*RLcp1_28+OPcp1_18*RLcp1_29-OPcp1_211*RLcp1_112-OPcp1_26*RLcp1_18-OPcp1_28*
+ RLcp1_19;
+
+// = = Block_1_0_0_2_1_0 = = 
+ 
+// Symbolic Outputs  
+
+    sens->P[1] = POcp1_112;
+    sens->P[2] = POcp1_212;
+    sens->P[3] = POcp1_312;
+    sens->R[1][1] = ROcp1_112;
+    sens->R[1][2] = ROcp1_212;
+    sens->R[1][3] = ROcp1_312;
+    sens->R[2][1] = ROcp1_411;
+    sens->R[2][2] = ROcp1_511;
+    sens->R[2][3] = ROcp1_611;
+    sens->R[3][1] = ROcp1_712;
+    sens->R[3][2] = ROcp1_812;
+    sens->R[3][3] = ROcp1_912;
+    sens->V[1] = VIcp1_112;
+    sens->V[2] = VIcp1_212;
+    sens->V[3] = VIcp1_312;
+    sens->OM[1] = OMcp1_112;
+    sens->OM[2] = OMcp1_212;
+    sens->OM[3] = OMcp1_312;
+    sens->A[1] = ACcp1_112;
+    sens->A[2] = ACcp1_212;
+    sens->A[3] = ACcp1_312;
+    sens->OMP[1] = OPcp1_112;
+    sens->OMP[2] = OPcp1_212;
+    sens->OMP[3] = OPcp1_312;
+ 
+// 
+break;
+case 3:
+ 
+
+
+// = = Block_1_0_0_3_0_1 = = 
+ 
+// Sensor Kinematics 
+
+
+    ROcp2_45 = -S4*C5;
+    ROcp2_55 = C4*C5;
+    ROcp2_75 = S4*S5;
+    ROcp2_85 = -C4*S5;
+    ROcp2_16 = -(ROcp2_75*S6-C4*C6);
+    ROcp2_26 = -(ROcp2_85*S6-S4*C6);
+    ROcp2_36 = -C5*S6;
+    ROcp2_76 = ROcp2_75*C6+C4*S6;
+    ROcp2_86 = ROcp2_85*C6+S4*S6;
+    ROcp2_96 = C5*C6;
+    OMcp2_15 = qd[5]*C4;
+    OMcp2_25 = qd[5]*S4;
+    OMcp2_16 = OMcp2_15+ROcp2_45*qd[6];
+    OMcp2_26 = OMcp2_25+ROcp2_55*qd[6];
+    OMcp2_36 = qd[4]+qd[6]*S5;
+    OPcp2_16 = ROcp2_45*qdd[6]+qdd[5]*C4-qd[4]*qd[5]*S4+qd[6]*(OMcp2_25*S5-ROcp2_55*qd[4]);
+    OPcp2_26 = ROcp2_55*qdd[6]+qdd[5]*S4+qd[4]*qd[5]*C4-qd[6]*(OMcp2_15*S5-ROcp2_45*qd[4]);
+    OPcp2_36 = qdd[4]+qdd[6]*S5+qd[5]*qd[6]*C5;
+
+// = = Block_1_0_0_3_0_4 = = 
+ 
+// Sensor Kinematics 
+
+
+    ROcp2_413 = ROcp2_45*C13+ROcp2_76*S13;
+    ROcp2_513 = ROcp2_55*C13+ROcp2_86*S13;
+    ROcp2_613 = ROcp2_96*S13+C13*S5;
+    ROcp2_713 = -(ROcp2_45*S13-ROcp2_76*C13);
+    ROcp2_813 = -(ROcp2_55*S13-ROcp2_86*C13);
+    ROcp2_913 = ROcp2_96*C13-S13*S5;
+    ROcp2_114 = ROcp2_16*C14-ROcp2_713*S14;
+    ROcp2_214 = ROcp2_26*C14-ROcp2_813*S14;
+    ROcp2_314 = ROcp2_36*C14-ROcp2_913*S14;
+    ROcp2_714 = ROcp2_16*S14+ROcp2_713*C14;
+    ROcp2_814 = ROcp2_26*S14+ROcp2_813*C14;
+    ROcp2_914 = ROcp2_36*S14+ROcp2_913*C14;
+    ROcp2_415 = ROcp2_413*C15+ROcp2_714*S15;
+    ROcp2_515 = ROcp2_513*C15+ROcp2_814*S15;
+    ROcp2_615 = ROcp2_613*C15+ROcp2_914*S15;
+    ROcp2_715 = -(ROcp2_413*S15-ROcp2_714*C15);
+    ROcp2_815 = -(ROcp2_513*S15-ROcp2_814*C15);
+    ROcp2_915 = -(ROcp2_613*S15-ROcp2_914*C15);
+    ROcp2_116 = ROcp2_114*C16+ROcp2_415*S16;
+    ROcp2_216 = ROcp2_214*C16+ROcp2_515*S16;
+    ROcp2_316 = ROcp2_314*C16+ROcp2_615*S16;
+    ROcp2_416 = -(ROcp2_114*S16-ROcp2_415*C16);
+    ROcp2_516 = -(ROcp2_214*S16-ROcp2_515*C16);
+    ROcp2_616 = -(ROcp2_314*S16-ROcp2_615*C16);
+    ROcp2_117 = ROcp2_116*C17-ROcp2_715*S17;
+    ROcp2_217 = ROcp2_216*C17-ROcp2_815*S17;
+    ROcp2_317 = ROcp2_316*C17-ROcp2_915*S17;
+    ROcp2_717 = ROcp2_116*S17+ROcp2_715*C17;
+    ROcp2_817 = ROcp2_216*S17+ROcp2_815*C17;
+    ROcp2_917 = ROcp2_316*S17+ROcp2_915*C17;
+    RLcp2_113 = ROcp2_16*s->dpt[1][2]+ROcp2_45*s->dpt[2][2]+ROcp2_76*s->dpt[3][2];
+    RLcp2_213 = ROcp2_26*s->dpt[1][2]+ROcp2_55*s->dpt[2][2]+ROcp2_86*s->dpt[3][2];
+    RLcp2_313 = ROcp2_36*s->dpt[1][2]+ROcp2_96*s->dpt[3][2]+s->dpt[2][2]*S5;
+    OMcp2_113 = OMcp2_16+ROcp2_16*qd[13];
+    OMcp2_213 = OMcp2_26+ROcp2_26*qd[13];
+    OMcp2_313 = OMcp2_36+ROcp2_36*qd[13];
+    ORcp2_113 = OMcp2_26*RLcp2_313-OMcp2_36*RLcp2_213;
+    ORcp2_213 = -(OMcp2_16*RLcp2_313-OMcp2_36*RLcp2_113);
+    ORcp2_313 = OMcp2_16*RLcp2_213-OMcp2_26*RLcp2_113;
+    OPcp2_113 = OPcp2_16+ROcp2_16*qdd[13]+qd[13]*(OMcp2_26*ROcp2_36-OMcp2_36*ROcp2_26);
+    OPcp2_213 = OPcp2_26+ROcp2_26*qdd[13]-qd[13]*(OMcp2_16*ROcp2_36-OMcp2_36*ROcp2_16);
+    OPcp2_313 = OPcp2_36+ROcp2_36*qdd[13]+qd[13]*(OMcp2_16*ROcp2_26-OMcp2_26*ROcp2_16);
+    RLcp2_114 = ROcp2_413*s->dpt[2][23];
+    RLcp2_214 = ROcp2_513*s->dpt[2][23];
+    RLcp2_314 = ROcp2_613*s->dpt[2][23];
+    OMcp2_114 = OMcp2_113+ROcp2_413*qd[14];
+    OMcp2_214 = OMcp2_213+ROcp2_513*qd[14];
+    OMcp2_314 = OMcp2_313+ROcp2_613*qd[14];
+    ORcp2_114 = OMcp2_213*RLcp2_314-OMcp2_313*RLcp2_214;
+    ORcp2_214 = -(OMcp2_113*RLcp2_314-OMcp2_313*RLcp2_114);
+    ORcp2_314 = OMcp2_113*RLcp2_214-OMcp2_213*RLcp2_114;
+    OMcp2_115 = OMcp2_114+ROcp2_114*qd[15];
+    OMcp2_215 = OMcp2_214+ROcp2_214*qd[15];
+    OMcp2_315 = OMcp2_314+ROcp2_314*qd[15];
+    OMcp2_116 = OMcp2_115+ROcp2_715*qd[16];
+    OMcp2_216 = OMcp2_215+ROcp2_815*qd[16];
+    OMcp2_316 = OMcp2_315+ROcp2_915*qd[16];
+    OPcp2_116 = OPcp2_113+ROcp2_114*qdd[15]+ROcp2_413*qdd[14]+ROcp2_715*qdd[16]+qd[14]*(OMcp2_213*ROcp2_613-OMcp2_313*
+ ROcp2_513)+qd[15]*(OMcp2_214*ROcp2_314-OMcp2_314*ROcp2_214)+qd[16]*(OMcp2_215*ROcp2_915-OMcp2_315*ROcp2_815);
+    OPcp2_216 = OPcp2_213+ROcp2_214*qdd[15]+ROcp2_513*qdd[14]+ROcp2_815*qdd[16]-qd[14]*(OMcp2_113*ROcp2_613-OMcp2_313*
+ ROcp2_413)-qd[15]*(OMcp2_114*ROcp2_314-OMcp2_314*ROcp2_114)-qd[16]*(OMcp2_115*ROcp2_915-OMcp2_315*ROcp2_715);
+    OPcp2_316 = OPcp2_313+ROcp2_314*qdd[15]+ROcp2_613*qdd[14]+ROcp2_915*qdd[16]+qd[14]*(OMcp2_113*ROcp2_513-OMcp2_213*
+ ROcp2_413)+qd[15]*(OMcp2_114*ROcp2_214-OMcp2_214*ROcp2_114)+qd[16]*(OMcp2_115*ROcp2_815-OMcp2_215*ROcp2_715);
+    RLcp2_117 = ROcp2_715*s->dpt[3][26];
+    RLcp2_217 = ROcp2_815*s->dpt[3][26];
+    RLcp2_317 = ROcp2_915*s->dpt[3][26];
+    POcp2_117 = RLcp2_113+RLcp2_114+RLcp2_117+q[1];
+    POcp2_217 = RLcp2_213+RLcp2_214+RLcp2_217+q[2];
+    POcp2_317 = RLcp2_313+RLcp2_314+RLcp2_317+q[3];
+    OMcp2_117 = OMcp2_116+ROcp2_416*qd[17];
+    OMcp2_217 = OMcp2_216+ROcp2_516*qd[17];
+    OMcp2_317 = OMcp2_316+ROcp2_616*qd[17];
+    ORcp2_117 = OMcp2_216*RLcp2_317-OMcp2_316*RLcp2_217;
+    ORcp2_217 = -(OMcp2_116*RLcp2_317-OMcp2_316*RLcp2_117);
+    ORcp2_317 = OMcp2_116*RLcp2_217-OMcp2_216*RLcp2_117;
+    VIcp2_117 = ORcp2_113+ORcp2_114+ORcp2_117+qd[1];
+    VIcp2_217 = ORcp2_213+ORcp2_214+ORcp2_217+qd[2];
+    VIcp2_317 = ORcp2_313+ORcp2_314+ORcp2_317+qd[3];
+    OPcp2_117 = OPcp2_116+ROcp2_416*qdd[17]+qd[17]*(OMcp2_216*ROcp2_616-OMcp2_316*ROcp2_516);
+    OPcp2_217 = OPcp2_216+ROcp2_516*qdd[17]-qd[17]*(OMcp2_116*ROcp2_616-OMcp2_316*ROcp2_416);
+    OPcp2_317 = OPcp2_316+ROcp2_616*qdd[17]+qd[17]*(OMcp2_116*ROcp2_516-OMcp2_216*ROcp2_416);
+    ACcp2_117 = qdd[1]+OMcp2_213*ORcp2_314+OMcp2_216*ORcp2_317+OMcp2_26*ORcp2_313-OMcp2_313*ORcp2_214-OMcp2_316*ORcp2_217-
+ OMcp2_36*ORcp2_213+OPcp2_213*RLcp2_314+OPcp2_216*RLcp2_317+OPcp2_26*RLcp2_313-OPcp2_313*RLcp2_214-OPcp2_316*RLcp2_217-
+ OPcp2_36*RLcp2_213;
+    ACcp2_217 = qdd[2]-OMcp2_113*ORcp2_314-OMcp2_116*ORcp2_317-OMcp2_16*ORcp2_313+OMcp2_313*ORcp2_114+OMcp2_316*ORcp2_117+
+ OMcp2_36*ORcp2_113-OPcp2_113*RLcp2_314-OPcp2_116*RLcp2_317-OPcp2_16*RLcp2_313+OPcp2_313*RLcp2_114+OPcp2_316*RLcp2_117+
+ OPcp2_36*RLcp2_113;
+    ACcp2_317 = qdd[3]+OMcp2_113*ORcp2_214+OMcp2_116*ORcp2_217+OMcp2_16*ORcp2_213-OMcp2_213*ORcp2_114-OMcp2_216*ORcp2_117-
+ OMcp2_26*ORcp2_113+OPcp2_113*RLcp2_214+OPcp2_116*RLcp2_217+OPcp2_16*RLcp2_213-OPcp2_213*RLcp2_114-OPcp2_216*RLcp2_117-
+ OPcp2_26*RLcp2_113;
+
+// = = Block_1_0_0_3_1_0 = = 
+ 
+// Symbolic Outputs  
+
+    sens->P[1] = POcp2_117;
+    sens->P[2] = POcp2_217;
+    sens->P[3] = POcp2_317;
+    sens->R[1][1] = ROcp2_117;
+    sens->R[1][2] = ROcp2_217;
+    sens->R[1][3] = ROcp2_317;
+    sens->R[2][1] = ROcp2_416;
+    sens->R[2][2] = ROcp2_516;
+    sens->R[2][3] = ROcp2_616;
+    sens->R[3][1] = ROcp2_717;
+    sens->R[3][2] = ROcp2_817;
+    sens->R[3][3] = ROcp2_917;
+    sens->V[1] = VIcp2_117;
+    sens->V[2] = VIcp2_217;
+    sens->V[3] = VIcp2_317;
+    sens->OM[1] = OMcp2_117;
+    sens->OM[2] = OMcp2_217;
+    sens->OM[3] = OMcp2_317;
+    sens->A[1] = ACcp2_117;
+    sens->A[2] = ACcp2_217;
+    sens->A[3] = ACcp2_317;
+    sens->OMP[1] = OPcp2_117;
+    sens->OMP[2] = OPcp2_217;
+    sens->OMP[3] = OPcp2_317;
+ 
+// 
+break;
+case 4:
+ 
+
+
+// = = Block_1_0_0_4_0_1 = = 
+ 
+// Sensor Kinematics 
+
+
+    ROcp3_45 = -S4*C5;
+    ROcp3_55 = C4*C5;
+    ROcp3_75 = S4*S5;
+    ROcp3_85 = -C4*S5;
+    ROcp3_16 = -(ROcp3_75*S6-C4*C6);
+    ROcp3_26 = -(ROcp3_85*S6-S4*C6);
+    ROcp3_36 = -C5*S6;
+    ROcp3_76 = ROcp3_75*C6+C4*S6;
+    ROcp3_86 = ROcp3_85*C6+S4*S6;
+    ROcp3_96 = C5*C6;
+    OMcp3_15 = qd[5]*C4;
+    OMcp3_25 = qd[5]*S4;
+    OMcp3_16 = OMcp3_15+ROcp3_45*qd[6];
+    OMcp3_26 = OMcp3_25+ROcp3_55*qd[6];
+    OMcp3_36 = qd[4]+qd[6]*S5;
+    OPcp3_16 = ROcp3_45*qdd[6]+qdd[5]*C4-qd[4]*qd[5]*S4+qd[6]*(OMcp3_25*S5-ROcp3_55*qd[4]);
+    OPcp3_26 = ROcp3_55*qdd[6]+qdd[5]*S4+qd[4]*qd[5]*C4-qd[6]*(OMcp3_15*S5-ROcp3_45*qd[4]);
+    OPcp3_36 = qdd[4]+qdd[6]*S5+qd[5]*qd[6]*C5;
+
+// = = Block_1_0_0_4_0_15 = = 
+ 
+// Sensor Kinematics 
+
+
+    ROcp3_433 = ROcp3_45*C33+ROcp3_76*S33;
+    ROcp3_533 = ROcp3_55*C33+ROcp3_86*S33;
+    ROcp3_633 = ROcp3_96*S33+C33*S5;
+    ROcp3_733 = -(ROcp3_45*S33-ROcp3_76*C33);
+    ROcp3_833 = -(ROcp3_55*S33-ROcp3_86*C33);
+    ROcp3_933 = ROcp3_96*C33-S33*S5;
+    ROcp3_434 = ROcp3_433*C34+ROcp3_733*S34;
+    ROcp3_534 = ROcp3_533*C34+ROcp3_833*S34;
+    ROcp3_634 = ROcp3_633*C34+ROcp3_933*S34;
+    ROcp3_734 = -(ROcp3_433*S34-ROcp3_733*C34);
+    ROcp3_834 = -(ROcp3_533*S34-ROcp3_833*C34);
+    ROcp3_934 = -(ROcp3_633*S34-ROcp3_933*C34);
+    ROcp3_135 = ROcp3_16*C35-ROcp3_734*S35;
+    ROcp3_235 = ROcp3_26*C35-ROcp3_834*S35;
+    ROcp3_335 = ROcp3_36*C35-ROcp3_934*S35;
+    ROcp3_735 = ROcp3_16*S35+ROcp3_734*C35;
+    ROcp3_835 = ROcp3_26*S35+ROcp3_834*C35;
+    ROcp3_935 = ROcp3_36*S35+ROcp3_934*C35;
+    RLcp3_133 = ROcp3_16*s->dpt[1][12]+ROcp3_45*s->dpt[2][12]+ROcp3_76*s->dpt[3][12];
+    RLcp3_233 = ROcp3_26*s->dpt[1][12]+ROcp3_55*s->dpt[2][12]+ROcp3_86*s->dpt[3][12];
+    RLcp3_333 = ROcp3_36*s->dpt[1][12]+ROcp3_96*s->dpt[3][12]+s->dpt[2][12]*S5;
+    OMcp3_133 = OMcp3_16+ROcp3_16*qd[33];
+    OMcp3_233 = OMcp3_26+ROcp3_26*qd[33];
+    OMcp3_333 = OMcp3_36+ROcp3_36*qd[33];
+    ORcp3_133 = OMcp3_26*RLcp3_333-OMcp3_36*RLcp3_233;
+    ORcp3_233 = -(OMcp3_16*RLcp3_333-OMcp3_36*RLcp3_133);
+    ORcp3_333 = OMcp3_16*RLcp3_233-OMcp3_26*RLcp3_133;
+    OPcp3_133 = OPcp3_16+ROcp3_16*qdd[33]+qd[33]*(OMcp3_26*ROcp3_36-OMcp3_36*ROcp3_26);
+    OPcp3_233 = OPcp3_26+ROcp3_26*qdd[33]-qd[33]*(OMcp3_16*ROcp3_36-OMcp3_36*ROcp3_16);
+    OPcp3_333 = OPcp3_36+ROcp3_36*qdd[33]+qd[33]*(OMcp3_16*ROcp3_26-OMcp3_26*ROcp3_16);
+    RLcp3_134 = ROcp3_433*s->dpt[2][46];
+    RLcp3_234 = ROcp3_533*s->dpt[2][46];
+    RLcp3_334 = ROcp3_633*s->dpt[2][46];
+    OMcp3_134 = OMcp3_133+ROcp3_16*qd[34];
+    OMcp3_234 = OMcp3_233+ROcp3_26*qd[34];
+    OMcp3_334 = OMcp3_333+ROcp3_36*qd[34];
+    ORcp3_134 = OMcp3_233*RLcp3_334-OMcp3_333*RLcp3_234;
+    ORcp3_234 = -(OMcp3_133*RLcp3_334-OMcp3_333*RLcp3_134);
+    ORcp3_334 = OMcp3_133*RLcp3_234-OMcp3_233*RLcp3_134;
+    OPcp3_134 = OPcp3_133+ROcp3_16*qdd[34]+qd[34]*(OMcp3_233*ROcp3_36-OMcp3_333*ROcp3_26);
+    OPcp3_234 = OPcp3_233+ROcp3_26*qdd[34]-qd[34]*(OMcp3_133*ROcp3_36-OMcp3_333*ROcp3_16);
+    OPcp3_334 = OPcp3_333+ROcp3_36*qdd[34]+qd[34]*(OMcp3_133*ROcp3_26-OMcp3_233*ROcp3_16);
+    RLcp3_135 = ROcp3_734*s->dpt[3][49];
+    RLcp3_235 = ROcp3_834*s->dpt[3][49];
+    RLcp3_335 = ROcp3_934*s->dpt[3][49];
+    POcp3_135 = RLcp3_133+RLcp3_134+RLcp3_135+q[1];
+    POcp3_235 = RLcp3_233+RLcp3_234+RLcp3_235+q[2];
+    POcp3_335 = RLcp3_333+RLcp3_334+RLcp3_335+q[3];
+    OMcp3_135 = OMcp3_134+ROcp3_434*qd[35];
+    OMcp3_235 = OMcp3_234+ROcp3_534*qd[35];
+    OMcp3_335 = OMcp3_334+ROcp3_634*qd[35];
+    ORcp3_135 = OMcp3_234*RLcp3_335-OMcp3_334*RLcp3_235;
+    ORcp3_235 = -(OMcp3_134*RLcp3_335-OMcp3_334*RLcp3_135);
+    ORcp3_335 = OMcp3_134*RLcp3_235-OMcp3_234*RLcp3_135;
+    VIcp3_135 = ORcp3_133+ORcp3_134+ORcp3_135+qd[1];
+    VIcp3_235 = ORcp3_233+ORcp3_234+ORcp3_235+qd[2];
+    VIcp3_335 = ORcp3_333+ORcp3_334+ORcp3_335+qd[3];
+    OPcp3_135 = OPcp3_134+ROcp3_434*qdd[35]+qd[35]*(OMcp3_234*ROcp3_634-OMcp3_334*ROcp3_534);
+    OPcp3_235 = OPcp3_234+ROcp3_534*qdd[35]-qd[35]*(OMcp3_134*ROcp3_634-OMcp3_334*ROcp3_434);
+    OPcp3_335 = OPcp3_334+ROcp3_634*qdd[35]+qd[35]*(OMcp3_134*ROcp3_534-OMcp3_234*ROcp3_434);
+    ACcp3_135 = qdd[1]+OMcp3_233*ORcp3_334+OMcp3_234*ORcp3_335+OMcp3_26*ORcp3_333-OMcp3_333*ORcp3_234-OMcp3_334*ORcp3_235-
+ OMcp3_36*ORcp3_233+OPcp3_233*RLcp3_334+OPcp3_234*RLcp3_335+OPcp3_26*RLcp3_333-OPcp3_333*RLcp3_234-OPcp3_334*RLcp3_235-
+ OPcp3_36*RLcp3_233;
+    ACcp3_235 = qdd[2]-OMcp3_133*ORcp3_334-OMcp3_134*ORcp3_335-OMcp3_16*ORcp3_333+OMcp3_333*ORcp3_134+OMcp3_334*ORcp3_135+
+ OMcp3_36*ORcp3_133-OPcp3_133*RLcp3_334-OPcp3_134*RLcp3_335-OPcp3_16*RLcp3_333+OPcp3_333*RLcp3_134+OPcp3_334*RLcp3_135+
+ OPcp3_36*RLcp3_133;
+    ACcp3_335 = qdd[3]+OMcp3_133*ORcp3_234+OMcp3_134*ORcp3_235+OMcp3_16*ORcp3_233-OMcp3_233*ORcp3_134-OMcp3_234*ORcp3_135-
+ OMcp3_26*ORcp3_133+OPcp3_133*RLcp3_234+OPcp3_134*RLcp3_235+OPcp3_16*RLcp3_233-OPcp3_233*RLcp3_134-OPcp3_234*RLcp3_135-
+ OPcp3_26*RLcp3_133;
+
+// = = Block_1_0_0_4_1_0 = = 
+ 
+// Symbolic Outputs  
+
+    sens->P[1] = POcp3_135;
+    sens->P[2] = POcp3_235;
+    sens->P[3] = POcp3_335;
+    sens->R[1][1] = ROcp3_135;
+    sens->R[1][2] = ROcp3_235;
+    sens->R[1][3] = ROcp3_335;
+    sens->R[2][1] = ROcp3_434;
+    sens->R[2][2] = ROcp3_534;
+    sens->R[2][3] = ROcp3_634;
+    sens->R[3][1] = ROcp3_735;
+    sens->R[3][2] = ROcp3_835;
+    sens->R[3][3] = ROcp3_935;
+    sens->V[1] = VIcp3_135;
+    sens->V[2] = VIcp3_235;
+    sens->V[3] = VIcp3_335;
+    sens->OM[1] = OMcp3_135;
+    sens->OM[2] = OMcp3_235;
+    sens->OM[3] = OMcp3_335;
+    sens->A[1] = ACcp3_135;
+    sens->A[2] = ACcp3_235;
+    sens->A[3] = ACcp3_335;
+    sens->OMP[1] = OPcp3_135;
+    sens->OMP[2] = OPcp3_235;
+    sens->OMP[3] = OPcp3_335;
+ 
+// 
+break;
+case 5:
+ 
+
+
+// = = Block_1_0_0_5_0_1 = = 
+ 
+// Sensor Kinematics 
+
+
+    ROcp4_45 = -S4*C5;
+    ROcp4_55 = C4*C5;
+    ROcp4_75 = S4*S5;
+    ROcp4_85 = -C4*S5;
+    ROcp4_16 = -(ROcp4_75*S6-C4*C6);
+    ROcp4_26 = -(ROcp4_85*S6-S4*C6);
+    ROcp4_36 = -C5*S6;
+    ROcp4_76 = ROcp4_75*C6+C4*S6;
+    ROcp4_86 = ROcp4_85*C6+S4*S6;
+    ROcp4_96 = C5*C6;
+    OMcp4_15 = qd[5]*C4;
+    OMcp4_25 = qd[5]*S4;
+    OMcp4_16 = OMcp4_15+ROcp4_45*qd[6];
+    OMcp4_26 = OMcp4_25+ROcp4_55*qd[6];
+    OMcp4_36 = qd[4]+qd[6]*S5;
+    OPcp4_16 = ROcp4_45*qdd[6]+qdd[5]*C4-qd[4]*qd[5]*S4+qd[6]*(OMcp4_25*S5-ROcp4_55*qd[4]);
+    OPcp4_26 = ROcp4_55*qdd[6]+qdd[5]*S4+qd[4]*qd[5]*C4-qd[6]*(OMcp4_15*S5-ROcp4_45*qd[4]);
+    OPcp4_36 = qdd[4]+qdd[6]*S5+qd[5]*qd[6]*C5;
+
+// = = Block_1_0_0_5_0_16 = = 
+ 
+// Sensor Kinematics 
+
+
+    ROcp4_436 = ROcp4_45*C36+ROcp4_76*S36;
+    ROcp4_536 = ROcp4_55*C36+ROcp4_86*S36;
+    ROcp4_636 = ROcp4_96*S36+C36*S5;
+    ROcp4_736 = -(ROcp4_45*S36-ROcp4_76*C36);
+    ROcp4_836 = -(ROcp4_55*S36-ROcp4_86*C36);
+    ROcp4_936 = ROcp4_96*C36-S36*S5;
+    ROcp4_437 = ROcp4_436*C37+ROcp4_736*S37;
+    ROcp4_537 = ROcp4_536*C37+ROcp4_836*S37;
+    ROcp4_637 = ROcp4_636*C37+ROcp4_936*S37;
+    ROcp4_737 = -(ROcp4_436*S37-ROcp4_736*C37);
+    ROcp4_837 = -(ROcp4_536*S37-ROcp4_836*C37);
+    ROcp4_937 = -(ROcp4_636*S37-ROcp4_936*C37);
+    ROcp4_138 = ROcp4_16*C38-ROcp4_737*S38;
+    ROcp4_238 = ROcp4_26*C38-ROcp4_837*S38;
+    ROcp4_338 = ROcp4_36*C38-ROcp4_937*S38;
+    ROcp4_738 = ROcp4_16*S38+ROcp4_737*C38;
+    ROcp4_838 = ROcp4_26*S38+ROcp4_837*C38;
+    ROcp4_938 = ROcp4_36*S38+ROcp4_937*C38;
+    RLcp4_136 = ROcp4_16*s->dpt[1][13]+ROcp4_45*s->dpt[2][13]+ROcp4_76*s->dpt[3][13];
+    RLcp4_236 = ROcp4_26*s->dpt[1][13]+ROcp4_55*s->dpt[2][13]+ROcp4_86*s->dpt[3][13];
+    RLcp4_336 = ROcp4_36*s->dpt[1][13]+ROcp4_96*s->dpt[3][13]+s->dpt[2][13]*S5;
+    OMcp4_136 = OMcp4_16+ROcp4_16*qd[36];
+    OMcp4_236 = OMcp4_26+ROcp4_26*qd[36];
+    OMcp4_336 = OMcp4_36+ROcp4_36*qd[36];
+    ORcp4_136 = OMcp4_26*RLcp4_336-OMcp4_36*RLcp4_236;
+    ORcp4_236 = -(OMcp4_16*RLcp4_336-OMcp4_36*RLcp4_136);
+    ORcp4_336 = OMcp4_16*RLcp4_236-OMcp4_26*RLcp4_136;
+    OPcp4_136 = OPcp4_16+ROcp4_16*qdd[36]+qd[36]*(OMcp4_26*ROcp4_36-OMcp4_36*ROcp4_26);
+    OPcp4_236 = OPcp4_26+ROcp4_26*qdd[36]-qd[36]*(OMcp4_16*ROcp4_36-OMcp4_36*ROcp4_16);
+    OPcp4_336 = OPcp4_36+ROcp4_36*qdd[36]+qd[36]*(OMcp4_16*ROcp4_26-OMcp4_26*ROcp4_16);
+    RLcp4_137 = ROcp4_436*s->dpt[2][51];
+    RLcp4_237 = ROcp4_536*s->dpt[2][51];
+    RLcp4_337 = ROcp4_636*s->dpt[2][51];
+    OMcp4_137 = OMcp4_136+ROcp4_16*qd[37];
+    OMcp4_237 = OMcp4_236+ROcp4_26*qd[37];
+    OMcp4_337 = OMcp4_336+ROcp4_36*qd[37];
+    ORcp4_137 = OMcp4_236*RLcp4_337-OMcp4_336*RLcp4_237;
+    ORcp4_237 = -(OMcp4_136*RLcp4_337-OMcp4_336*RLcp4_137);
+    ORcp4_337 = OMcp4_136*RLcp4_237-OMcp4_236*RLcp4_137;
+    OPcp4_137 = OPcp4_136+ROcp4_16*qdd[37]+qd[37]*(OMcp4_236*ROcp4_36-OMcp4_336*ROcp4_26);
+    OPcp4_237 = OPcp4_236+ROcp4_26*qdd[37]-qd[37]*(OMcp4_136*ROcp4_36-OMcp4_336*ROcp4_16);
+    OPcp4_337 = OPcp4_336+ROcp4_36*qdd[37]+qd[37]*(OMcp4_136*ROcp4_26-OMcp4_236*ROcp4_16);
+    RLcp4_138 = ROcp4_737*s->dpt[3][53];
+    RLcp4_238 = ROcp4_837*s->dpt[3][53];
+    RLcp4_338 = ROcp4_937*s->dpt[3][53];
+    POcp4_138 = RLcp4_136+RLcp4_137+RLcp4_138+q[1];
+    POcp4_238 = RLcp4_236+RLcp4_237+RLcp4_238+q[2];
+    POcp4_338 = RLcp4_336+RLcp4_337+RLcp4_338+q[3];
+    OMcp4_138 = OMcp4_137+ROcp4_437*qd[38];
+    OMcp4_238 = OMcp4_237+ROcp4_537*qd[38];
+    OMcp4_338 = OMcp4_337+ROcp4_637*qd[38];
+    ORcp4_138 = OMcp4_237*RLcp4_338-OMcp4_337*RLcp4_238;
+    ORcp4_238 = -(OMcp4_137*RLcp4_338-OMcp4_337*RLcp4_138);
+    ORcp4_338 = OMcp4_137*RLcp4_238-OMcp4_237*RLcp4_138;
+    VIcp4_138 = ORcp4_136+ORcp4_137+ORcp4_138+qd[1];
+    VIcp4_238 = ORcp4_236+ORcp4_237+ORcp4_238+qd[2];
+    VIcp4_338 = ORcp4_336+ORcp4_337+ORcp4_338+qd[3];
+    OPcp4_138 = OPcp4_137+ROcp4_437*qdd[38]+qd[38]*(OMcp4_237*ROcp4_637-OMcp4_337*ROcp4_537);
+    OPcp4_238 = OPcp4_237+ROcp4_537*qdd[38]-qd[38]*(OMcp4_137*ROcp4_637-OMcp4_337*ROcp4_437);
+    OPcp4_338 = OPcp4_337+ROcp4_637*qdd[38]+qd[38]*(OMcp4_137*ROcp4_537-OMcp4_237*ROcp4_437);
+    ACcp4_138 = qdd[1]+OMcp4_236*ORcp4_337+OMcp4_237*ORcp4_338+OMcp4_26*ORcp4_336-OMcp4_336*ORcp4_237-OMcp4_337*ORcp4_238-
+ OMcp4_36*ORcp4_236+OPcp4_236*RLcp4_337+OPcp4_237*RLcp4_338+OPcp4_26*RLcp4_336-OPcp4_336*RLcp4_237-OPcp4_337*RLcp4_238-
+ OPcp4_36*RLcp4_236;
+    ACcp4_238 = qdd[2]-OMcp4_136*ORcp4_337-OMcp4_137*ORcp4_338-OMcp4_16*ORcp4_336+OMcp4_336*ORcp4_137+OMcp4_337*ORcp4_138+
+ OMcp4_36*ORcp4_136-OPcp4_136*RLcp4_337-OPcp4_137*RLcp4_338-OPcp4_16*RLcp4_336+OPcp4_336*RLcp4_137+OPcp4_337*RLcp4_138+
+ OPcp4_36*RLcp4_136;
+    ACcp4_338 = qdd[3]+OMcp4_136*ORcp4_237+OMcp4_137*ORcp4_238+OMcp4_16*ORcp4_236-OMcp4_236*ORcp4_137-OMcp4_237*ORcp4_138-
+ OMcp4_26*ORcp4_136+OPcp4_136*RLcp4_237+OPcp4_137*RLcp4_238+OPcp4_16*RLcp4_236-OPcp4_236*RLcp4_137-OPcp4_237*RLcp4_138-
+ OPcp4_26*RLcp4_136;
+
+// = = Block_1_0_0_5_1_0 = = 
+ 
+// Symbolic Outputs  
+
+    sens->P[1] = POcp4_138;
+    sens->P[2] = POcp4_238;
+    sens->P[3] = POcp4_338;
+    sens->R[1][1] = ROcp4_138;
+    sens->R[1][2] = ROcp4_238;
+    sens->R[1][3] = ROcp4_338;
+    sens->R[2][1] = ROcp4_437;
+    sens->R[2][2] = ROcp4_537;
+    sens->R[2][3] = ROcp4_637;
+    sens->R[3][1] = ROcp4_738;
+    sens->R[3][2] = ROcp4_838;
+    sens->R[3][3] = ROcp4_938;
+    sens->V[1] = VIcp4_138;
+    sens->V[2] = VIcp4_238;
+    sens->V[3] = VIcp4_338;
+    sens->OM[1] = OMcp4_138;
+    sens->OM[2] = OMcp4_238;
+    sens->OM[3] = OMcp4_338;
+    sens->A[1] = ACcp4_138;
+    sens->A[2] = ACcp4_238;
+    sens->A[3] = ACcp4_338;
+    sens->OMP[1] = OPcp4_138;
+    sens->OMP[2] = OPcp4_238;
+    sens->OMP[3] = OPcp4_338;
+
+break;
+default:
+break;
+}
+
+
+// ====== END Task 1 ====== 
+
+
+}
+ 
+
