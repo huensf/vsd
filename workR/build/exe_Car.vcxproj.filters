@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{67A31ABD-12BE-31A3-BA21-80DC80CB47C4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

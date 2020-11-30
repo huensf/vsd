@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\choldc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\ludcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\cholesky.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\cholsl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\integrator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\lubksb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\svbksb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\svdcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\svdcmp_lapack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_custom.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_euler_explicit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_rk4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\rk4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_dopri5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\rosenbrock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\thetaSC.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\dopri5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\bader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\euler_implicit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_w_methods.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\w_methods.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_bader.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_euler_implicit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_rosenbrock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\eig_lapack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\rank_lapack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\inverse_lapack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\schur_lapack.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\riccati.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{67A31ABD-12BE-31A3-BA21-80DC80CB47C4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

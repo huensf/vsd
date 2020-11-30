@@ -1,0 +1,10 @@
+^C:\USERS\HUENSF\DOCUMENTS\COURS\MASTER\M2Q1\VEHICLE\CAR\USERFCTR\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR -BC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build --check-stamp-file C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/userfctR/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

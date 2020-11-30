@@ -63,8 +63,8 @@ int main(int argc, char const *argv[])
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
     mbs_part = mbs_new_part(mbs_data);
-    mbs_part->options->rowperm=1;
-    mbs_part->options->verbose = 1;
+    mbs_part->options->rowperm = 1;
+    mbs_part->options->verbose = 0;
     mbs_run_part(mbs_part, mbs_data);
     
     mbs_delete_part(mbs_part);
@@ -81,7 +81,7 @@ int main(int argc, char const *argv[])
     // equil options (see documentations for additional options)
     mbs_equil->options->senstol = 1e-2; //1e-2
     mbs_equil->options->devjac = 1e-2; //1e-2
-    mbs_equil->options->verbose = 1;
+    mbs_equil->options->verbose = 0;
     mbs_equil->options->resfilename = "static_1";
 
     mbs_data->q[R2_chassis_id] = 0.0;
@@ -109,7 +109,7 @@ int main(int argc, char const *argv[])
     // equil options (see documentations for additional options)
     mbs_equil->options->senstol = 1e-2; //1e-2
     mbs_equil->options->devjac = 1e-2; //1e-2
-    mbs_equil->options->verbose = 1;
+    mbs_equil->options->verbose = 0;
     mbs_equil->options->equitol = 1e-7;
     mbs_equil->options->resfilename = "static_2";
     // --- Variable addition, xe (straight wheels)
@@ -135,7 +135,7 @@ int main(int argc, char const *argv[])
     // equil options (see documentations for additional options)
     mbs_equil->options->senstol = 1e-06;
     //mbs_equil->options->devjac = 1e-05;
-    mbs_equil->options->verbose = 1;
+    mbs_equil->options->verbose = 0;
     mbs_equil->options->mode = 2;
     mbs_equil->options->resfilename = "sl";
     // set a desired speed
@@ -167,7 +167,7 @@ int main(int argc, char const *argv[])
     /*                MODAL ANALYSIS around the straight line    *
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-    mbs_modal = mbs_new_modal(mbs_data);
+    /*mbs_modal = mbs_new_modal(mbs_data);
     // modal options (see documentations for additional options)
     mbs_modal->options->save_mat = 1;
     mbs_modal->options->save_eval = 1;
@@ -175,9 +175,9 @@ int main(int argc, char const *argv[])
     mbs_modal->options->save_result = 1;
     mbs_modal->options->save_anim = 1;
     //mbs_modal->options->mode_ampl = 0.2;
-    mbs_modal->options->verbose = 1;
+    mbs_modal->options->verbose = 0;
     mbs_run_modal(mbs_modal, mbs_data);
-    mbs_delete_modal(mbs_modal, mbs_data);
+    mbs_delete_modal(mbs_modal, mbs_data);*/
 
 
 

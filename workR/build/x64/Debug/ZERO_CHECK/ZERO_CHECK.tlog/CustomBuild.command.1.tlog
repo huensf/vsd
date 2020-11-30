@@ -1,0 +1,10 @@
+^C:\USERS\HUENSF\DOCUMENTS\COURS\MASTER\M2Q1\VEHICLE\CAR\WORKR\BUILD\CMAKEFILES\2293ED89B5C6EB9C9F9B37500BFEAC75\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR -BC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/Car.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -8,7 +8,7 @@
  *
  * Universite catholique de Louvain, Belgium 
  *
- * Last update : Fri Nov  8 11:38:33 2019
+ * Last update : Mon Nov 30 14:42:32 2020
  * --------------------------------------------------------
  *
  */
@@ -182,6 +182,10 @@
 #define Amortisseur_av_d_1_id 2
 #define Amortisseur_ar_d_1_id 3
 #define Amortisseur_ar_g_1_id 4
+
+
+// links 3D
+
 
 
 // Rods

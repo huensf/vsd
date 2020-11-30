@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\TireGround\tgc_bakker_contact.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\TireGround\tgc_car_kine_wheel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\realtime\user_realtime_events.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\realtime\user_realtime_options.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\realtime\user_realtime_plot.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\realtime\user_realtime_visu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_Derivative.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_DrivenJoints.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_ExtForces.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_IO.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_JointForces.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_Link3DForces.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_LinkForces.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_cons_hJ.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_cons_jdqd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_dirdyn.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_equil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_load.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\user_model.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\userfctR\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{67A31ABD-12BE-31A3-BA21-80DC80CB47C4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

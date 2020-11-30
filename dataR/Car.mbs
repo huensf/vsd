@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mbsDescR7>
   <mbsname>Car</mbsname>
-  <mbsyspad_version>1.13.0</mbsyspad_version>
+  <mbsyspad_version>1.14.3</mbsyspad_version>
   <base>
     <!--this is the base body-->
     <gravity>
@@ -2860,7 +2860,12 @@
       <joint>
         <jointname>T2_rack</jointname>
         <type>T2</type>
-        <nature>independent</nature>
+        <nature>driven</nature>
+        <symbols>
+          <q />
+          <qd />
+          <qdd />
+        </symbols>
         <graphics>
           <x2D>
             <position>
