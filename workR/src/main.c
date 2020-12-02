@@ -70,8 +70,6 @@ int main(int argc, char const *argv[])
     mbs_delete_part(mbs_part);
 
 
-
-
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
     /*                STATIC EQUILIBRIUM at given height         *
     /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */

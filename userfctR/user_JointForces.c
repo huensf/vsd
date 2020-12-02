@@ -8,14 +8,11 @@
 //---------------------------
 
 #include "math.h" 
-
+#include "user_all_id.h"
 #include "mbs_data.h"
 #include "user_model.h"
 #include "set_output.h"
 #include "useful_functions.h"
-
-#include "user_all_id.h"
-#include "user_model.h"
 
 double* user_JointForces(MbsData *mbs_data, double tsim)
 {
@@ -30,7 +27,8 @@ double* user_JointForces(MbsData *mbs_data, double tsim)
 
     // anti-roll bar
     mbs_data->Qq[R2_def_bar_ft_id] = -mbs_data->user_model->FrontSuspension.C_bar*mbs_data->q[R2_def_bar_ft_id];
-    mbs_data->Qq[R2_def_bar_rr_id] = -mbs_data->user_model->RearSuspension.C_bar*mbs_data->q[R2_def_bar_rr_id];
+    if (tsim >= 3.5)
+        mbs_data->Qq[R2_def_bar_rr_id] = -mbs_data->user_model->RearSuspension.C_bar* 0 *mbs_data->q[R2_def_bar_rr_id];
 
 /*-- End of user code --*/
 
