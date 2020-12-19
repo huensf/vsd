@@ -1,4 +1,4 @@
-﻿  Building Custom Rule C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/mbs_utilities/CMakeLists.txt
+﻿  Building Custom Rule C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/mbs_utilities/CMakeLists.txt
   auto_output.c
   set_output.c
   lut.c
@@ -11,10 +11,10 @@
   mbs_set.c
   mbs_tool.c
   mbs_trajectories.c
-C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_utilities\mbs_trajectories.h(9,1): warning C4005: '_USE_MATH_DEFINES' : redéfinition de macro
-C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_utilities\mbs_trajectories.c : message : voir la définition précédente de '_USE_MATH_DEFINES'
+C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_utilities\mbs_trajectories.h(9,1): warning C4005: '_USE_MATH_DEFINES' : redéfinition de macro
+C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_utilities\mbs_trajectories.c : message : voir la définition précédente de '_USE_MATH_DEFINES'
   norm.c
   useful_functions.c
   write_files.c
   Génération de code en cours...
-  MBsysC_utilities.vcxproj -> C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_utilities\Debug\MBsysC_utilities.lib
+  MBsysC_utilities.vcxproj -> C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_utilities\Debug\MBsysC_utilities.lib

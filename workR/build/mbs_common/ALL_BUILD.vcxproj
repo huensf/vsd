@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5692C6DA-0F54-3681-B821-4005AE07C94B}</ProjectGuid>
+    <ProjectGuid>{9DB40530-DA34-31AC-9BA8-0A6E708C98C8}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -105,10 +105,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR -BC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build --check-stamp-file C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR -BC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build --check-stamp-file C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -116,12 +117,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDependentOption.cmake;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfig.cmake.in;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfigVersion.cmake.in;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\RobotranVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDependentOption.cmake;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfig.cmake.in;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfigVersion.cmake.in;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\RobotranVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR -BC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build --check-stamp-file C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR -BC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build --check-stamp-file C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -129,12 +130,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDependentOption.cmake;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfig.cmake.in;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfigVersion.cmake.in;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\RobotranVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDependentOption.cmake;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfig.cmake.in;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfigVersion.cmake.in;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\RobotranVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR -BC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build --check-stamp-file C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR -BC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build --check-stamp-file C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -142,12 +143,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDependentOption.cmake;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfig.cmake.in;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfigVersion.cmake.in;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\RobotranVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDependentOption.cmake;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfig.cmake.in;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfigVersion.cmake.in;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\RobotranVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR -BC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build --check-stamp-file C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR -BC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build --check-stamp-file C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -155,38 +156,38 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDependentOption.cmake;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfig.cmake.in;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfigVersion.cmake.in;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\RobotranVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.19\Modules\CMakeDependentOption.cmake;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfig.cmake.in;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\LibRobotranCConfigVersion.cmake.in;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\RobotranVersion.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\ZERO_CHECK.vcxproj">
-      <Project>{68CFED0F-68DE-3258-BDF0-70CFBD302C4E}</Project>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\ZERO_CHECK.vcxproj">
+      <Project>{0F544A79-70D7-3C57-AAE6-16244DBB3993}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_load_xml\MBsysC_loadXML.vcxproj">
-      <Project>{05A9DFE4-73D5-3026-97A0-AAEAB9B20A17}</Project>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_load_xml\MBsysC_loadXML.vcxproj">
+      <Project>{A042A5CE-959C-3DF0-A201-9C3284D5808C}</Project>
       <Name>MBsysC_loadXML</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_module\MBsysC_module.vcxproj">
-      <Project>{1CE328FD-7A51-30A4-ADCA-1FBCED9D11BB}</Project>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_module\MBsysC_module.vcxproj">
+      <Project>{495B06C4-417E-3F24-81E6-6AEAF70A426C}</Project>
       <Name>MBsysC_module</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_numerics\MBsysC_numerics.vcxproj">
-      <Project>{6336CF5C-3390-3231-AB70-2328629250F7}</Project>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_numerics\MBsysC_numerics.vcxproj">
+      <Project>{57498672-6F3C-3598-AFCD-1E28BED323FF}</Project>
       <Name>MBsysC_numerics</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_realtime\MBsysC_realtime.vcxproj">
-      <Project>{1695ED8C-1296-3AAF-B7CC-14782628BECA}</Project>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_realtime\MBsysC_realtime.vcxproj">
+      <Project>{45EFCC2E-9C0A-3247-B80F-DF9E21FB5F23}</Project>
       <Name>MBsysC_realtime</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_utilities\MBsysC_utilities.vcxproj">
-      <Project>{3CF8DEC8-4EB0-34CE-B7DA-F79728ABCB15}</Project>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_utilities\MBsysC_utilities.vcxproj">
+      <Project>{18696DE2-6FED-33F4-9A6E-39D8A54CD258}</Project>
       <Name>MBsysC_utilities</Name>
     </ProjectReference>
   </ItemGroup>

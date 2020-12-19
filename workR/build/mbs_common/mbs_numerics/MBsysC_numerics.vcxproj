@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6336CF5C-3390-3231-AB70-2328629250F7}</ProjectGuid>
+    <ProjectGuid>{57498672-6F3C-3598-AFCD-1E28BED323FF}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,29 +59,28 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_numerics\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_numerics\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MBsysC_numerics.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MBsysC_numerics</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_numerics\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_numerics\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MBsysC_numerics.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MBsysC_numerics</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_numerics\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_numerics\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MBsysC_numerics.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MBsysC_numerics</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_numerics\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_numerics\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MBsysC_numerics.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MBsysC_numerics</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
@@ -96,10 +95,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;DIRDYNARED;INVDYNARED;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -112,9 +111,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
       </ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -130,10 +128,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;DIRDYNARED;INVDYNARED;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -146,9 +144,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsC</CompileAs>
       <ExceptionHandling>
       </ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -164,10 +161,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;DIRDYNARED;INVDYNARED;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -180,9 +177,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
@@ -197,10 +193,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USE_MATH_DEFINES;DIRDYNARED;INVDYNARED;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\..\libs\lapacke\include;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_struct;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_utilities;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\..\mbs_module;C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\.\mbs_integrators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -212,10 +208,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/mbs_numerics/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/mbs_numerics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR -BC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build --check-stamp-file C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_numerics/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR -BC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build --check-stamp-file C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_numerics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -223,12 +220,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\huensf\.robotran\mbsysc\MBsysC\conf\FindLapackWin.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_numerics\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\.robotran\mbsysc\MBsysC\conf\FindLapackWin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_numerics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/mbs_numerics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/mbs_numerics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR -BC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build --check-stamp-file C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_numerics/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR -BC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build --check-stamp-file C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_numerics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -236,12 +233,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\huensf\.robotran\mbsysc\MBsysC\conf\FindLapackWin.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_numerics\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\.robotran\mbsysc\MBsysC\conf\FindLapackWin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_numerics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/mbs_numerics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/mbs_numerics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR -BC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build --check-stamp-file C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_numerics/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR -BC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build --check-stamp-file C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_numerics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -249,12 +246,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\huensf\.robotran\mbsysc\MBsysC\conf\FindLapackWin.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_numerics\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\.robotran\mbsysc\MBsysC\conf\FindLapackWin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_numerics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/mbs_numerics/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/mbs_numerics/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR -BC:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build --check-stamp-file C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_numerics/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR -BC:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build --check-stamp-file C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_numerics/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -262,45 +259,45 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\huensf\.robotran\mbsysc\MBsysC\conf\FindLapackWin.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\mbs_common\mbs_numerics\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\.robotran\mbsysc\MBsysC\conf\FindLapackWin.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\mbs_common\mbs_numerics\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\choldc.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\ludcmp.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\cholesky.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\cholsl.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\integrator.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\lubksb.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\svbksb.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\svdcmp.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\svdcmp_lapack.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_custom.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_euler_explicit.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_rk4.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\rk4.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_dopri5.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\rosenbrock.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\thetaSC.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\dopri5.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\bader.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\euler_implicit.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_w_methods.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\w_methods.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_bader.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_euler_implicit.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_rosenbrock.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\eig_lapack.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\rank_lapack.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\inverse_lapack.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\schur_lapack.c" />
-    <ClCompile Include="C:\Users\huensf\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\riccati.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\choldc.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\ludcmp.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\cholesky.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\cholsl.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\integrator.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\lubksb.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\svbksb.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\svdcmp.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\svdcmp_lapack.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_custom.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_euler_explicit.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_rk4.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\rk4.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_dopri5.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\rosenbrock.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\thetaSC.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\dopri5.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\bader.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\euler_implicit.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_w_methods.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\w_methods.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_bader.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_euler_implicit.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\mbs_integrators\mbs_rosenbrock.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\eig_lapack.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\rank_lapack.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\inverse_lapack.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\schur_lapack.c" />
+    <ClCompile Include="C:\Users\Lucas\.robotran\mbsysc\MBsysC\mbs_common\mbs_numerics\riccati.c" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\huensf\Documents\Cours\Master\M2Q1\Vehicle\car\workR\build\ZERO_CHECK.vcxproj">
-      <Project>{68CFED0F-68DE-3258-BDF0-70CFBD302C4E}</Project>
+    <ProjectReference Include="C:\Users\Lucas\Documents\Robotran_Projects\vsd\workR\build\ZERO_CHECK.vcxproj">
+      <Project>{0F544A79-70D7-3C57-AAE6-16244DBB3993}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

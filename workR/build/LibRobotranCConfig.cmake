@@ -18,9 +18,9 @@ FIND_LIBRARY(LIB_MBSYSC_MODULES MBsysC_module
     PATHS 
           //Release
           //Debug
-          C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_module
-          C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_module//Debug
-          C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_module//Release
+          C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_module
+          C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_module//Debug
+          C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_module//Release
 )
 
 # MBSYSC_LOAD
@@ -28,9 +28,9 @@ FIND_LIBRARY(LIB_MBSYSC_LOAD MBsysC_loadXML
     PATHS 
           //Release
           //Debug
-          C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_load_xml
-          C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_load_xml//Debug
-          C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_load_xml//Release
+          C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_load_xml
+          C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_load_xml//Debug
+          C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_load_xml//Release
 )
 
 # MBSYSC_UTILITIES
@@ -38,9 +38,9 @@ FIND_LIBRARY(LIB_MBSYSC_UTILITIES MBsysC_utilities
     PATHS 
           //Release
           //Debug
-          C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_utilities
-          C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_utilities//Debug
-          C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_utilities//Release
+          C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_utilities
+          C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_utilities//Debug
+          C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_utilities//Release
 )
 
 # MBSYSC_REALTIME
@@ -48,9 +48,9 @@ FIND_LIBRARY(LIB_MBSYSC_REALTIME MBsysC_realtime
     PATHS 
           //Release
           //Debug
-          C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_realtime
-          C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_realtime//Debug
-          C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/mbs_common/mbs_realtime//Release
+          C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_realtime
+          C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_realtime//Debug
+          C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/mbs_common/mbs_realtime//Release
 )
 
 
@@ -59,7 +59,7 @@ FIND_LIBRARY(LIB_MBSYSC_REALTIME MBsysC_realtime
 #############
 
 # Path to Robotran common files
-SET(ROBOTRAN_SOURCE_DIR C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/../)
+SET(ROBOTRAN_SOURCE_DIR C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/../)
 
 # Call project funstion (symbolic and user) via function pointers
 SET(FLAG_PRJ_FCT_PTR OFF)
@@ -78,7 +78,7 @@ SET(FLAG_SHARED_LIB OFF)
 # INCLUDE DIRECTORIES
 #############
 
-SET(LIB_MBSYSC_INCLUDE_DIRS C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_struct;C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_load_xml;C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_module;C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_utilities;C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_utilities/auto_output;C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_realtime;C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_realtime/realtime;C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_realtime/sdl;C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_realtime/sdl/auto_plot;C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_numerics )
+SET(LIB_MBSYSC_INCLUDE_DIRS C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_struct;C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_load_xml;C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_module;C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_utilities;C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_utilities/auto_output;C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_realtime;C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_realtime/realtime;C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_realtime/sdl;C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_realtime/sdl/auto_plot;C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/..//mbs_common/mbs_numerics )
 
 #############
 # DEFINITIONS

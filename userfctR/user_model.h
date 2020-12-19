@@ -65,6 +65,16 @@ struct UserModel
         double R11C;
         double R12C;
     } Rotations;
+
+    struct PI{
+        double Kp;
+        double Ki;
+        double Integral_Error;
+        double Deltat;
+        double xoffset;
+        double yoffset;
+        double center;
+    } PI;
  
 };
 

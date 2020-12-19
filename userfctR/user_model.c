@@ -54,7 +54,15 @@ UserModel* mbs_new_user_model()
     um->Rotations.R12D = 0.0;
     um->Rotations.R11C = 0.0;
     um->Rotations.R12C = 0.0;
- 
+
+    um->PI.Kp = 0.1;
+    um->PI.Ki = 0.3;
+    um->PI.Integral_Error = 0.0;
+    um->PI.Deltat = 0.0;
+    um->PI.xoffset = 0.0;
+    um->PI.xoffset = 0.0; 
+    um->PI.center = 0.0;
+
     return um;
 }
 
@@ -95,6 +103,14 @@ void mbs_delete_user_model(UserModel* um)
     um->Rotations.R12D = mbs_infos->user_models->user_model_list[6]->parameter_list[3]->value_list[1];
     um->Rotations.R11C = mbs_infos->user_models->user_model_list[6]->parameter_list[4]->value_list[1];
     um->Rotations.R12C = mbs_infos->user_models->user_model_list[6]->parameter_list[5]->value_list[1];
+
+    //um->PI.Kp = mbs_infos->user_models->user_model_list[7]->parameter_list[0]->value_list[1];
+    //um->PI.Ki = mbs_infos->user_models->user_model_list[7]->parameter_list[1]->value_list[1];
+    //um->PI.Integral_Error = mbs_infos->user_models->user_model_list[7]->parameter_list[2]->value_list[1];
+    //um->PI.Deltat = mbs_infos->user_models->user_model_list[7]->parameter_list[3]->value_list[1];
+    //um->PI.xoffset = mbs_infos->user_models->user_model_list[7]->parameter_list[4]->value_list[1];
+    //um->PI.yoffset = mbs_infos->user_models->user_model_list[7]->parameter_list[5]->value_list[1];
+    //um->PI.center = mbs_infos->user_models->user_model_list[7]->parameter_list[6]->value_list[1];
  
 }
 
@@ -129,6 +145,13 @@ void mbs_delete_user_model(UserModel* um)
     mbs_infos->user_models->user_model_list[6]->parameter_list[4]->val_ptr = &um->Rotations.R11C;
     mbs_infos->user_models->user_model_list[6]->parameter_list[5]->val_ptr = &um->Rotations.R12C;
  
+    //mbs_infos->user_models->user_model_list[7]->parameter_list[0]->val_ptr = &um->PI.Kp;
+    //mbs_infos->user_models->user_model_list[7]->parameter_list[1]->val_ptr = &um->PI.Ki;
+   // mbs_infos->user_models->user_model_list[7]->parameter_list[2]->val_ptr = &um->PI.Integral_Error;
+    //mbs_infos->user_models->user_model_list[7]->parameter_list[3]->val_ptr = &um->PI.Deltat;
+    //mbs_infos->user_models->user_model_list[7]->parameter_list[4]->val_ptr = &um->PI.xoffset;
+    //mbs_infos->user_models->user_model_list[7]->parameter_list[5]->val_ptr = &um->PI.yoffset;
+    //mbs_infos->user_models->user_model_list[7]->parameter_list[6]->val_ptr = &um->PI.center;
 }
  
  void mbs_print_user_model(UserModel* um) 
@@ -179,6 +202,7 @@ void mbs_get_user_model_list(int *user_model_list)
     user_model_list[5]  = 2; 
     user_model_list[6]  = 2; 
     user_model_list[7]  = 6; 
+    //user_model_list[8]  = 7; 
 }
 
 // ============================================================ //

@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/huensf/.robotran/mbsysc/MBsysC/mbs_common/mbs_realtime
+# Install script for directory: C:/Users/Lucas/.robotran/mbsysc/MBsysC/mbs_common/mbs_realtime
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/huensf/Documents/Cours/Master/M2Q1/Vehicle/car/workR/build/Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/Lucas/Documents/Robotran_Projects/vsd/workR/build/Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
