@@ -4554,7 +4554,7 @@
       <!--This is the viewpoint list-->
       <viewpoint>
         <name>Vue_chassis_arriere</name>
-        <joint>R3_chassis</joint>
+        <joint>R1_chassis</joint>
         <position>
           <x>-15.0</x>
           <y>0.0</y>
