@@ -26,7 +26,7 @@ project (Car)
 # Variable for storing the path to Robotran common files (should be adapted depending on the location of those source)
 if(NOT DEFINED ROBOTRAN_SOURCE_DIR)
     set(TRIAL_PATHS_MBSYSC
-	C:/Users/huensf/.robotran/mbsysc/MBsysC/
+	C:/Users/Lucas/.robotran/mbsysc/MBsysC/
         ${PROJECT_SOURCE_DIR}/../mbsysCopy
     )
     find_path(ROBOTRAN_SOURCE_DIR mbs_common ${TRIAL_PATHS_MBSYSC} DOC "Path to the Robotran-MBsysC common files")
