@@ -40,7 +40,7 @@ void user_dirdyn_init(MbsData *mbs_data, MbsDirdyn *mbs_dd)
  */
 void user_dirdyn_loop(MbsData *mbs_data, MbsDirdyn *mbs_dd)
 {
-
+	
 }
 
 /*! \brief user own finishing functions

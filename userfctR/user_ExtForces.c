@@ -21,6 +21,16 @@
 
 #include "tireGroundCar.h"
 
+double* data_F_av_d_y;
+double* data_F_av_d_z;
+double* data_F_av_g_y;
+double* data_F_av_g_z;
+double* data_F_ar_g_y;
+double* data_F_ar_g_z;
+double* data_F_ar_d_y;
+double* data_F_ar_d_z;
+int flag_dirdyn;
+
 double angle_vecteurs(int droite, MbsData *mbs_data)
 {
     // definition
@@ -80,8 +90,6 @@ double angle_vecteurs(int droite, MbsData *mbs_data)
 //    mbs_msg("Angle: %f\n", angle);
 }
 
-
-
 double* user_ExtForces(double PxF[4], double RxF[4][4], 
                        double VxF[4], double OMxF[4], 
                        double AxF[4], double OMPxF[4], 
@@ -89,12 +97,14 @@ double* user_ExtForces(double PxF[4], double RxF[4][4],
 {
     double Fx=0.0, Fy=0.0, Fz=0.0;
     double Mx=0.0, My=0.0, Mz=0.0;
-    double dxF[4] ={0.0, 0.0, 0.0, 0.0};
+    double dxF[4] = {0.0, 0.0, 0.0, 0.0};
 
     // wheel kinematics variables
     double pen, rz, angslip, angcamb, slip, Pcon[4], Vcon[4], Rt_ground[4][4], Rt_ground_t[4][4];
     // tire/ground contact forces variables
-    double Fwhl_R[4], Mwhl_R[4], Fwhl_I[4], Mwhl_I[4];
+    double Fwhl_R[4], Mwhl_R[4];
+    double Fwhl_I[4] = { 0.0, 0.0, 0.0, 0.0 };
+    double Mwhl_I[4] = { 0.0, 0.0, 0.0, 0.0 };
 
     double *SWr = mbs_data->SWr[ixF];
     // default application point of the force: anchor point to which it is attached
@@ -118,16 +128,16 @@ double* user_ExtForces(double PxF[4], double RxF[4][4],
         {
             Fwhl_R[1] = 0.0;
             Fwhl_R[2] = 0.0;
-            Fwhl_R[3] = mbs_data->user_model->FrontTire.K*pen;
+            Fwhl_R[3] = mbs_data->user_model->FrontTire.K * pen;
             Mwhl_R[1] = 0.0;
             Mwhl_R[2] = 0.0;
             Mwhl_R[3] = 0.0;
         }
         else if (mbs_data->process == 2) // dynamic
         {
-            if (pen>0)
+            if (pen > 0)
             {
-                Fwhl_R[3] = mbs_data->user_model->FrontTire.K*pen;
+                Fwhl_R[3] = mbs_data->user_model->FrontTire.K * pen;
                 //mbs_car_bakker(Fwhl_R, Mwhl_R, angslip, angcamb, slip);
                 tgc_bakker_contact(Fwhl_R, Mwhl_R, angslip, angcamb, slip);
                 //mbs_car_bakker_lin_0(Fwhl_R, Mwhl_R, angslip, angcamb, slip);
@@ -145,6 +155,28 @@ double* user_ExtForces(double PxF[4], double RxF[4][4],
 
         matrix_product(Rt_ground, Fwhl_R, Fwhl_I);
         matrix_product(Rt_ground, Mwhl_R, Mwhl_I);
+
+        /****************************************/
+        int i = (int)(tsim / 0.001);
+        if (flag_dirdyn) {
+            if (ixF == 1) {
+                data_F_av_d_y[i] = Fwhl_R[2];
+                data_F_av_d_z[i] = Fwhl_R[3];
+            }
+            else if (ixF == 2) {
+                data_F_av_g_y[i] = Fwhl_R[2];
+                data_F_av_g_z[i] = Fwhl_R[3];
+            }
+            else if (ixF == 3) {
+                data_F_ar_g_y[i] = Fwhl_R[2];
+                data_F_ar_g_z[i] = Fwhl_R[3];
+            }
+            else if (ixF == 4) {
+                data_F_ar_d_y[i] = Fwhl_R[2];
+                data_F_ar_d_z[i] = Fwhl_R[3];
+            }
+        }
+        /****************************************/
 
         break;
         /* End of user code */

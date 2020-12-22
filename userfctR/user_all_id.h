@@ -175,7 +175,6 @@
 #define F_ar_g_1_id 3
 #define F_ar_d_1_id 4
 
-
 // links
 
 #define Amortisseur_av_g_1_id 1

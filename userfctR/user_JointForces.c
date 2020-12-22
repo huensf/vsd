@@ -27,9 +27,7 @@ double* user_JointForces(MbsData *mbs_data, double tsim)
 
     // anti-roll bar
     mbs_data->Qq[R2_def_bar_ft_id] = -mbs_data->user_model->FrontSuspension.C_bar * mbs_data->q[R2_def_bar_ft_id];
-    mbs_data->Qq[R2_def_bar_rr_id] = -mbs_data->user_model->RearSuspension.C_bar * mbs_data->q[R2_def_bar_rr_id] * 0.7;
-    /*if (tsim >= 3.5)
-        mbs_data->Qq[R2_def_bar_rr_id] = -mbs_data->user_model->RearSuspension.C_bar * mbs_data->q[R2_def_bar_rr_id] * 0;*/
+    mbs_data->Qq[R2_def_bar_rr_id] = -mbs_data->user_model->RearSuspension.C_bar * mbs_data->q[R2_def_bar_rr_id];
 
 /*-- End of user code --*/
 

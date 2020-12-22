@@ -35,11 +35,20 @@
 #include "user_all_id.h"
 #include "user_model.h"
 
+extern double* data_F_av_d_y;
+extern double* data_F_av_d_z;
+extern double* data_F_av_g_y;
+extern double* data_F_av_g_z;
+extern double* data_F_ar_g_y;
+extern double* data_F_ar_g_z;
+extern double* data_F_ar_d_y;
+extern double* data_F_ar_d_z;
+extern int flag_dirdyn;
+
 int main(int argc, char const *argv[])
 {
     
     MbsData *mbs_data;
-    
     MbsPart *mbs_part;
     MbsDirdyn *mbs_dirdyn;
     MbsEquil *mbs_equil;
@@ -243,9 +252,55 @@ int main(int argc, char const *argv[])
     mbs_dirdyn->options->tf  = 10.0;
     mbs_dirdyn->options->save2file = 1;
     //mbs_dirdyn->options->realtime = 1;
-    
+
+    data_F_av_d_y = malloc(10002 * sizeof(double));
+    data_F_av_d_z = malloc(10002 * sizeof(double));
+    data_F_av_g_y = malloc(10002 * sizeof(double));
+    data_F_av_g_z = malloc(10002 * sizeof(double));
+    data_F_ar_g_y = malloc(10002 * sizeof(double));
+    data_F_ar_g_z = malloc(10002 * sizeof(double));
+    data_F_ar_d_y = malloc(10002 * sizeof(double));
+    data_F_ar_d_z = malloc(10002 * sizeof(double));
+    flag_dirdyn = 1;
+
     mbs_run_dirdyn(mbs_dirdyn, mbs_data);
-    
+
+    /****************************************/
+    // Nom du file à changer en fonction du paramètre comme ça c'est direct ok
+    /*FILE* dirdyn_extForces_av_d = fopen("../../resultsR/dirdyn_extForces_av_d_RearRoll_70_init.res", "w");
+    FILE* dirdyn_extForces_av_g = fopen("../../resultsR/dirdyn_extForces_av_g_RearRoll_70_init.res", "w");
+    FILE* dirdyn_extForces_ar_d = fopen("../../resultsR/dirdyn_extForces_ar_d_RearRoll_70_init.res", "w");
+    FILE* dirdyn_extForces_ar_g = fopen("../../resultsR/dirdyn_extForces_ar_g_RearRoll_70_init.res", "w");*/
+
+    FILE* dirdyn_extForces_av_d = fopen("../../resultsR/dirdyn_extForces_av_d_normal.res", "w");
+    FILE* dirdyn_extForces_av_g = fopen("../../resultsR/dirdyn_extForces_av_g_normal.res", "w");
+    FILE* dirdyn_extForces_ar_d = fopen("../../resultsR/dirdyn_extForces_ar_d_normal.res", "w");
+    FILE* dirdyn_extForces_ar_g = fopen("../../resultsR/dirdyn_extForces_ar_g_normal.res", "w");
+
+    if (NULL == dirdyn_extForces_av_d || NULL == dirdyn_extForces_av_g || NULL == dirdyn_extForces_ar_g || NULL == dirdyn_extForces_ar_d)
+        perror("out.txt");
+    else {
+        for (int i = 0; i < 10001; i++) {
+            fprintf(dirdyn_extForces_av_d, "%f\t%f\n", data_F_av_d_y[i], data_F_av_d_z[i]);
+            fprintf(dirdyn_extForces_av_g, "%f\t%f\n", data_F_av_g_y[i], data_F_av_g_z[i]);
+            fprintf(dirdyn_extForces_ar_d, "%f\t%f\n", data_F_ar_d_y[i], data_F_ar_d_z[i]);
+            fprintf(dirdyn_extForces_ar_g, "%f\t%f\n", data_F_ar_g_y[i], data_F_ar_g_z[i]);
+        }
+        fclose(dirdyn_extForces_av_d);
+        fclose(dirdyn_extForces_av_g);
+        fclose(dirdyn_extForces_ar_d);
+        fclose(dirdyn_extForces_ar_g);
+    }
+
+    free(data_F_av_d_y);
+    free(data_F_av_d_z);
+    free(data_F_av_g_y);
+    free(data_F_av_g_z);
+    free(data_F_ar_g_y);
+    free(data_F_ar_g_z);
+    free(data_F_ar_d_y);
+    free(data_F_ar_d_z);
+
     mbs_delete_dirdyn(mbs_dirdyn, mbs_data);
     
     
